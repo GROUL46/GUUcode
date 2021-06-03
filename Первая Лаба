@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<iostream>
+
+using namespace std;
+int main()
+{
+	int arr[10];
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "\nINPUT NUM " << i + 1 << " :";
+		cin >> arr[i];
+		if (arr[i] % 2 == 0)
+		{
+			arr[i] = 0;
+			cout << "NUM CHANGE ON 0\n";
+		}
+	}
+	cout << "\nFINAL MASS:\n";
+	for (int i = 0; i < 10; i++)
+	{
+		cout << arr[i] << " ";
+	}
+}
